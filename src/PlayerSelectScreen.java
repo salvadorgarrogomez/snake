@@ -1,7 +1,6 @@
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -9,13 +8,16 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-//needs massive aesthetic rewrites
+/**
+ *
+ * @author Salvador Garro Gomez
+ */
+
 public class PlayerSelectScreen extends JPanel {
 
     JButton go;
     JButton quit;
     MainWindow mw;
-
     JRadioButton opt1;
     JRadioButton opt2;
     JRadioButton opt3;
@@ -52,20 +54,18 @@ public class PlayerSelectScreen extends JPanel {
         this.mw = mw;
 
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
-
         JLabel mess = new JLabel(select_Players_);
         add(mess);
-
         JLabel uc = new JLabel(default_1Player);
         add(uc);
 
-        //set up radio buttons
         opt1 = new JRadioButton(_PlayerDefault);
         opt1.setSelected(true);
         opt2 = new JRadioButton(_Players);
         opt3 = new JRadioButton(_Players1);
 
         ButtonGroup grp = new ButtonGroup();
+        
         grp.add(opt1);
         grp.add(opt2);
         grp.add(opt3);

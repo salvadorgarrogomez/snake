@@ -1,6 +1,11 @@
 
 import java.awt.Color;
 
+/**
+ *
+ * @author Salvador Garro Gomez
+ */
+
 public class Player {
 
     private String name;

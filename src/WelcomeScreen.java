@@ -3,12 +3,16 @@ import java.awt.CardLayout;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+
+/**
+ *
+ * @author Salvador Garro Gomez
+ */
 
 public class WelcomeScreen extends JPanel {
 
@@ -20,7 +24,6 @@ public class WelcomeScreen extends JPanel {
     JLabel title;
     JButton go;
     JButton quit;
-
     MainWindow mw;
 
     public void setTitle(String t) {
@@ -44,7 +47,6 @@ public class WelcomeScreen extends JPanel {
         title = new JLabel();
         add(title);
 
-        //add formatting here
         go = new JButton(NEW__GAME);
         quit = new JButton(QUIT);
 

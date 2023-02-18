@@ -1,11 +1,13 @@
 
 import javax.swing.SwingUtilities;
 
+/**
+ *
+ * @author Salvador Garro Gomez
+ */
+
 public class Main {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
