@@ -43,25 +43,26 @@ public class PlayerSelectScreen extends JPanel {
     }
 
     public PlayerSelectScreen(MainWindow mw) {
+        final String select_Players_ = "Select Players: ";                      //  Variable extraida para el ejercicio 2.2.
+        final String default_1Player = "Default: 1Player";                      //  Variable extraida para el ejercicio 2.2.
+        final String _PlayerDefault = "1 Player(Default)";                      //  Variable extraida para el ejercicio 2.2.
+        final String _Players = "2 Players";                                    //  Variable extraida para el ejercicio 2.2.
+        final String _Players1 = "3 Players";                                   //  Variable extraida para el ejercicio 2.2.
+
         this.mw = mw;
 
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
-        final String select_Players_ = "Select Players: ";
 
         JLabel mess = new JLabel(select_Players_);
         add(mess);
-        final String default_1Player = "Default: 1Player";
 
         JLabel uc = new JLabel(default_1Player);
         add(uc);
-        final String _PlayerDefault = "1 Player(Default)";
 
         //set up radio buttons
         opt1 = new JRadioButton(_PlayerDefault);
         opt1.setSelected(true);
-        final String _Players = "2 Players";
         opt2 = new JRadioButton(_Players);
-        final String _Players1 = "3 Players";
         opt3 = new JRadioButton(_Players1);
 
         ButtonGroup grp = new ButtonGroup();
@@ -72,7 +73,8 @@ public class PlayerSelectScreen extends JPanel {
         add(opt1);
         add(opt2);
         add(opt3);
-        final ActionListener actionListener = new ActionListener() {
+
+        final ActionListener actionListener = new ActionListener() {            //  Variable extraida para el ejercicio 2.2.
             public void actionPerformed(ActionEvent event) {
                 playerOptions();
             }
@@ -80,19 +82,19 @@ public class PlayerSelectScreen extends JPanel {
 
         opt1.addActionListener(actionListener);
         opt2.addActionListener(actionListener);
-
         opt3.addActionListener(actionListener);
-
         go = new JButton("Customize Board");
         quit = new JButton("Back");
-        final ActionListener actionListener1 = new ActionListener() {
+
+        final ActionListener actionListener1 = new ActionListener() {           //  Variable extraida para el ejercicio 2.2.
             public void actionPerformed(ActionEvent event) {
                 goButtonActionListener();
             }
         };
 
         go.addActionListener(actionListener1);
-        final ActionListener actionListener2 = new ActionListener() {
+
+        final ActionListener actionListener2 = new ActionListener() {           //  Variable extraida para el ejercicio 2.2.
             public void actionPerformed(ActionEvent event) {
                 quitButtonActionListener();
             }

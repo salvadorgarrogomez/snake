@@ -12,10 +12,10 @@ import javax.swing.JPanel;
 
 public class WelcomeScreen extends JPanel {
 
-    private static final String ARE_YOU_SURE = "Are you sure?";
-    private static final String QUIT = "Quit";
-    private static final String NEW__GAME = "New Game";
-    private static final String TWO = "Two";
+    private static final String ARE_YOU_SURE = "Are you sure?";                 //  Constantes realizadas para el ejercicio 2.3.
+    private static final String QUIT = "Quit";                                  //  Constantes realizadas para el ejercicio 2.3.
+    private static final String NEW__GAME = "New Game";                         //  Constantes realizadas para el ejercicio 2.3.
+    private static final String TWO = "Two";                                    //  Constantes realizadas para el ejercicio 2.3.
 
     JLabel title;
     JButton go;

@@ -125,15 +125,15 @@ public class BoardDrawing extends JPanel {
             //draw player position
             for (int pl = 0; pl < bs.maxPlayers; pl++) {
                 if (bs.players.get(pl).getPosition() == cellnos[i]) {
-                    changePlayerColor(g2d, pl, cell, cellWidth, cellHeight);
+                    changePlayerColor(g2d, pl, cell, cellWidth, cellHeight);    //  Extracciones de metodos para el ejercicio 2.4
                 }
             }
 
             if (cellnos[i] == row * col - 1) {
                 for (int pl = 0; pl < bs.maxPlayers; pl++) {
-                    if (bs.players.get(pl).getPosition() >= cellnos[i]) {                         //only one player considered here
+                    if (bs.players.get(pl).getPosition() >= cellnos[i]) {                         
 
-                        changePlayerColor(g2d, pl, cell, cellWidth, cellHeight);
+                        changePlayerColor(g2d, pl, cell, cellWidth, cellHeight);//  Extracciones de metodos para el ejercicio 2.4
                         //change to player position
                         //change to player color
                     }
@@ -171,12 +171,12 @@ public class BoardDrawing extends JPanel {
         }
 
     }
-
+    //  Extracciones de metodos para el ejercicio 2.4, desde la linea 174 a la 181.
     private void changePlayerColor(Graphics2D g2d, int pl, Rectangle cell, int cellWidth, int cellHeight) {
         //only one player considered here
 
-        g2d.setColor(bs.players.get(pl).getPlayerColor());        //change to player color
-        g2d.fillRect(cell.getLocation().x + pl * cellWidth / 4, cell.getLocation().y, cellWidth / 4, cellHeight / 4);//change to player position
+        g2d.setColor(bs.players.get(pl).getPlayerColor());        
+        g2d.fillRect(cell.getLocation().x + pl * cellWidth / 4, cell.getLocation().y, cellWidth / 4, cellHeight / 4);
         g2d.setColor(Color.blue);
     }
 

@@ -13,11 +13,11 @@ public class Player {
         playerPosn = 0;
     }
 
-    public int getPosition() {
+    public int getPosition() {                                                  //  Return cambiado por un get, ejercicio 2.1
         return playerPosn;
     }
 
-    public String getName() {
+    public String getName() {                                                   //  Return cambiado por un get ejercicio 2.1
         return name;
     }
 
@@ -33,7 +33,7 @@ public class Player {
         playerColor = c;
     }
 
-    public Color getPlayerColor() {
+    public Color getPlayerColor() {                                             //  Return cambiado por un get ejercicio 2.1
         return playerColor;
     }
 
@@ -41,7 +41,7 @@ public class Player {
         playerScore += a;
     }
 
-    public int getPlayerScore() {
+    public int getPlayerScore() {                                               //  Return cambiado por un get ejercicio 2.1
         return playerScore;
     }
 
